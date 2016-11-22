@@ -12,9 +12,9 @@ type_tags:
 - bower
 deps:
   brew:
-  - name: npm
+  - name: bower
   apt-get:
-  - name: npm
+  - name: bower
 inputs:
   - workdir: $BITRISE_SOURCE_DIR
     opts:
@@ -30,5 +30,5 @@ inputs:
     opts:
       title: Arguments for running `bower` commands
       description: |-
-        Arguments are added to the `npm` command. You can specify multiple arguments, separated
+        Arguments are added to the `bower` command. You can specify multiple arguments, separated
         by a space character. For example `-dd -ll`

@@ -11,4 +11,4 @@ if [ ! -z "${workdir}" ] ; then
   fi
 fi
 
-gulp ${command} ${options}
+bower ${command} ${options}
