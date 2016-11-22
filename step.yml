@@ -12,9 +12,9 @@ type_tags:
 - bower
 deps:
   brew:
-  - name: bower
+  - name: npm
   apt-get:
-  - name: bower
+  - name: npm
 inputs:
   - workdir: $BITRISE_SOURCE_DIR
     opts:
