@@ -19,6 +19,16 @@ if [ ! -z "${workdir}" ] ; then
   fi
 fi
 
+command -v bower >/dev/null 2>&1 || {
+    echo "===> Bower is no installed, installing now..."
+     npm install -g bower
+
+     if [ $? -ge 1 ]; then
+        echo "Failed to install bower using npm"
+        exit 1;
+     fi
+}
+
 debug_echo "command: $command"
 debug_echo "args: $args"
 debug_echo "options: $options"
