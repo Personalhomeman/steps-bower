@@ -4,10 +4,6 @@ description: Runs `bower` with the given command and args.
 website: https://github.com/nhammond101/steps-bower
 source_code_url: https://github.com/nhammond101/steps-bower
 support_url: https://github.com/nhammond101/steps-bower/issues
-host_os_tags:
-- osx-10.10
-project_type_tags:
-- react-native
 type_tags:
 - bower
 deps:
@@ -32,3 +28,12 @@ inputs:
       description: |-
         Arguments are added to the `bower` command. You can specify multiple arguments, separated
         by a space character. For example `-dd -ll`
+  - is_debug: "no"
+    opts:
+      title: "Debug?"
+      description: |
+        If debug=yes the step will print debug infos about
+        the working dir, tmp file path, exit code, etc.
+      value_options:
+        - "no"
+        - "yes"
