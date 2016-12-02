@@ -1,5 +1,5 @@
 format_version: 1.2.0
-default_step_lib_source: https://github.com/nhammond101/bitrise-steplib.git
+default_step_lib_source: https://github.com/bitrise-io/bitrise-steplib.git
 
 app:
   envs:
@@ -12,7 +12,7 @@ workflows:
         inputs:
           # - workdir: $BITRISE_SOURCE_DIR
           # - command: install
-          # - options: -d -ll
+          # - args: --save
           # - is_debug: no
 
   # ----------------------------------------------------------------

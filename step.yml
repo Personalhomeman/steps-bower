@@ -27,7 +27,7 @@ inputs:
       title: Arguments for running `bower` commands
       description: |-
         Arguments are added to the `bower` command. You can specify multiple arguments, separated
-        by a space character. For example `-dd -ll`
+        by a space character Nb. --allow-root is appended automatically. For example `--save`
   - is_debug: "no"
     opts:
       title: "Debug?"
