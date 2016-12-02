@@ -20,7 +20,7 @@ if [ ! -z "${workdir}" ] ; then
 fi
 
 command -v bower >/dev/null 2>&1 || {
-    echo "===> Bower is no installed, installing now..."
+    echo "===> Bower is not installed, installing now..."
      npm install -g bower
 
      if [ $? -ge 1 ]; then
@@ -31,9 +31,8 @@ command -v bower >/dev/null 2>&1 || {
 
 debug_echo "command: $command"
 debug_echo "args: $args"
-debug_echo "options: $options"
 debug_echo "is_debug: $is_debug"
 
-debug_echo "===> Running 'bower $command args --allow-root'"
+debug_echo "===> Running 'bower $command $args --allow-root'"
 
-bower ${command} ${options} --allow-root
+bower ${command} ${args} --allow-root
